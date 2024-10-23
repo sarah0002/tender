@@ -1,9 +1,76 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import cocktail from "../assets/images/cocktail.svg";
+import Button2 from "../components/Button2.astro";
 ---
 
 <MainLayout>
-  <article class="">
-    <h1 class="font-bold text-5xl text-red-500 text-center">Kontakt Os</h1>
-  </article>
+  <section
+    class="flex justify-center items-center min-h-screen open-sans pb-32"
+  >
+    <div class="w-[500px] mx-auto">
+      <div class="mb-8">
+        <Image src={cocktail} alt="Cocktail image" class="w-[300px] mx-auto" />
+      </div>
+      <h1 class="text-[#E52622] text-[100px] text-center open-sans-800">
+        KONTAKT
+      </h1>
+
+      <div class="mt-10">
+        <!-- Navn -->
+        <div class="pb-5">
+          <label for="navn" class="block text-[#E52622] open-sans">NAVN *</label
+          >
+          <input
+            type="text"
+            id="navn"
+            name="navn"
+            placeholder=""
+            class="px-1 border-2 border-[#E52622] text-lg rounded-lg w-full"
+          />
+        </div>
+        <!-- EMAIL og deltager -->
+        <div class="grid grid-cols-3 gap-5">
+          <div class="pb-5 col-span-2">
+            <label for="email" class="block text-[#E52622] open-sans"
+              >EMAIL *</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder=""
+              class="px-1 border-2 border-[#E52622] text-lg rounded-lg w-full"
+            />
+          </div>
+          <div class="col-span-1">
+            <label for="guests" class="block text-[#E52622] open-sans"
+              >ANTAL GÆSTER *</label
+            >
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              placeholder=""
+              class="px-1 border-2 border-[#E52622] text-lg rounded-lg w-full"
+            />
+          </div>
+        </div>
+        <!-- BESKRIVELSE -->
+        <div class="py-5">
+          <label for="description" class="block text-[#E52622] open-sans"
+            >BESKRIVELSE AF FORSPØRGELSE *</label
+          >
+          <textarea
+            id="description"
+            name="description"
+            placeholder=""
+            class="px-1 border-2 border-[#E52622] text-lg rounded-lg w-full h-[200px]"
+          ></textarea>
+        </div>
+        <Button2 class="py-5">SEND</Button2>
+      </div>
+    </div>
+  </section>
 </MainLayout>

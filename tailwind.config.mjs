@@ -2,16 +2,10 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-        fontWeight: {
-            'extra-bold': '800',
-        },
-
 		extend: {
 color:{
-    'rod': '#E52622',
-    'baggrund': '#FBFBFB',
-
-},
+    'rød': '#E52622',
+              },
 
             animation: {
                 'infinite-scroll': 'infinite-scroll 25s linear infinite',
