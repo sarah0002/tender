@@ -1,6 +1,26 @@
 ---
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.svg";
+import insta from "../assets/images/insta.svg";
+import tiktok from "../assets/images/tiktok.svg";
+
+import Button from "./Button.astro";
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
-</div>
-  
+
+<section class="grid grid-rows-3 gap-8 justify-center py-12">
+  <div class="justify-self-center">
+    <Image src={logo} alt="" class="w-[300px]" />
+  </div>
+  <div
+    class="flex gap-10 text-[#E52622] open-sans justify-self-center items-center"
+  >
+    <p>TEL: 30 31 13 98</p>
+    <p>KONTAKT@TENDERDRINKS.DK</p>
+    <p>CVR - 44888793</p>
+  </div>
+  <div class="flex justify-self-center gap-3 items-center">
+    <Image src={insta} alt="" class="w-[30px]" />
+    <Image src={tiktok} alt="" class="w-[30px] h-[30px]" />
+  </div>
+</section>

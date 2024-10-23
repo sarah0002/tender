@@ -1,15 +1,93 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
+import hero_foto from "../assets/images/hero_foto.webp";
+import rundt_logo from "../assets/images/rundt_logo.svg";
+import cocktail from "../assets/images/cocktail.svg";
+import logo from "../assets/images/logo.svg";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+<MainLayout title="Tender">
+  <article class="">
+    <section
+      class="relative flex justify-center items-center w-screen h-screen"
+    >
+      <Image
+        src={hero_foto}
+        alt=""
+        class="w-full h-full object-cover absolute z-10"
+      />
+      <Image
+        src={rundt_logo}
+        alt=""
+        class="w-[400px] relative z-20 animate-spin-slow"
+      />
+    </section>
+    <section
+      class="whitespace-nowrap overflow-x-hidden py-4 text-white extra-bold bg-[#E52622] open-sans text-2xl"
+    >
+      <div
+        class="inline-block
+      animate-infinite-scroll
+      whitespace-nowrap
+      [&_span]:mx-6"
+      >
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+      </div>
+      <div
+        class="inline-block animate-infinite-scroll whitespace-nowrap [&_span]:mx-6"
+        aria-hidden="true"
+      >
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+        <span>TENDER</span>
+      </div>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+        facilis et nostrum fugiat molestiae! Repellendus quo facere, labore vero
+        qui veniam unde est, perspiciatis aut doloribus soluta suscipit
+        voluptatum exercitationem?
+      </p>
+    </section>
+  </article>
 </MainLayout>
+
+<style>
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin 10s linear infinite; /* 10s er varigheden af en fuld rotation */
+  }
+</style>
