@@ -11,6 +11,9 @@ import logo from "../assets/images/logo.svg";
 import foto1 from "../assets/images/event_kandidat.jpg";
 import foto2 from "../assets/images/event_sommer.jpg";
 import foto3 from "../assets/images/event_polter.jpg";
+import foto4 from "../assets/images/event_emma.jpg";
+import foto5 from "../assets/images/event_bryggen.jpg";
+import foto6 from "../assets/images/event_50.jpg";
 
 import "../styles/tobii.min.css";
 const { href = "#", target = "_self" } = Astro.props;
@@ -73,96 +76,190 @@ import "motion";
         <span>TENDER</span>
       </div>
     </section>
-    <section
-      class="grid grid-cols-1 md:grid-cols-3 py-32 px-24 md:px-48 pb-48 md:pb-96"
-    >
-      <!-- Tekstindholdet i 1/3 af grid -->
-      <div class="col-span-1 md:col-span-1 md:order-1">
-        <h1 class="open-sans-800 text-2xl md:text-4xl">HVEM ER VI</h1>
-        <p class="py-6 md:py-10">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-          facilis et nostrum fugiat molestiae! Repellendus quo facere, labore
-          vero qui veniam unde est, perspiciatis aut doloribus soluta suscipit
-          voluptatum exercitationem?
-        </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-          facilis et nostrum fugiat molestiae! Repellendus quo facere, labore
-          vero qui veniam unde est, perspiciatis aut doloribus soluta suscipit
-          voluptatum exercitationem?
-        </p>
-        <p class="py-6 md:py-10">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-          facilis et nostrum fugiat molestiae! Repellendus quo facere, labore
-          vero qui veniam unde est, perspiciatis aut doloribus soluta suscipit
-          voluptatum exercitationem?
-        </p>
-        <div>
-          <Button>
-            <Link href="/kontakt">BOOK OS</Link>
-          </Button>
+
+    <section class="md:px-64 px-12 pt-20">
+      <h1
+        class="md:text-[80px] text-[40px] text-[#E52622] text-center open-sans-800"
+      >
+        COCKTAIL CATERING
+      </h1>
+      <h2 class="text-[#E52622] open-sans pt-10">
+        HOS TENDER TILBYDER VI EN FLEKSIBEL OG PROFESSIONEL BARTENDERSERVICE,
+        SOM DU KAN LEJE TIL DIN FEST ELLER BEGIVENHED. VI SØRGER FOR ALT
+        FORBEREDELSE, INDKØB, SERVICE OG NEDPAKNING - ALT DU SKAL GØRE ER AT
+        NYDE FESTEN SAMMEN MED DINE GÆSTER.
+      </h2>
+    </section>
+
+    <section class="pb-32v">
+      <div class="container mx-auto py-10 relative">
+        <!-- Karussel Container -->
+        <div class="relative overflow-hidden w-full max-w-6xl mx-auto">
+          <div
+            class="flex transition-transform duration-500 ease-in-out"
+            id="carousel-slide"
+          >
+            <!-- Karussel Items -->
+            <div class="flex-none w-full md:w-1/2 p-4 px-12" id="slide1">
+              <div class="relative h-88">
+                <!-- Tilføjet fast højde -->
+                <Image
+                  src={foto4}
+                  alt=""
+                  class="w-full h-[500px] object-cover rounded-lg shadow-md"
+                />
+              </div>
+              <p class="text-center mt-4 text-[#E52622]">
+                “JEG BRUGTE TENDER IFM. MIN 30 ÅRS FØDSELSDAG MED 40-45 GÆSTER,
+                OG VI MANGLEDE INTET! ALT VAR SÅ PROFESSIONELT MED TENDER, OG
+                DER VAR HØJT SERVICENIVEAU, FANTASTISKE DRINKS OG RIGTIG GODE OG
+                UNDERHOLDENDE BARTENDERE. JEG VIL TIL ENHVER TID ANBEFALE TENDER
+                🙏” <br />- EMMA ISHØY / DATO: 01.06.2024
+              </p>
+            </div>
+            <div class="flex-none w-full md:w-1/2 p-4 px-12" id="slide2">
+              <div class="relative h-88">
+                <Image
+                  src={foto2}
+                  alt=""
+                  class="w-full h-[500px] object-cover rounded-lg shadow-md"
+                />
+              </div>
+              <p class="text-center mt-4 text-[#E52622]">
+                “VI HAR AF FLERE OMGANGE GJORT BRUG AF TENDER OG HVER GANG ER
+                DET GÅET FANTASTISK. DE ER TJEKKEDE I DEN FÆLLES PLANLÆGNING AF
+                ARRANGEMENTET OG BUDGETTERINGEN, DE AFVIKLER PERFEKT MED SUPER
+                GODE COCKTAILS, OG SÅ EFTERLADER DE ALTID FESTEN RENGJORT OG MED
+                ET GODT INDTRYK HOS GÆSTERNE. 5 STJERNER HERFRA." <br /> -
+                BJARNE SPELLERBERG - BOYE OG SPELLERBERG / DATO: 26.06.2024 +
+                23.08.2024
+              </p>
+            </div>
+            <div class="flex-none w-full md:w-1/2 p-4 px-12" id="slide3">
+              <div class="relative h-88">
+                <Image
+                  src={foto5}
+                  alt=""
+                  class="w-full h-[500px] object-cover rounded-lg shadow-md"
+                />
+              </div>
+              <p class="text-center mt-4 text-[#E52622]">
+                “TENDER LEVEREDE ET FANTASTISK STYKKE ARBEJDE I FORBINDELSE MED
+                MIN 30-ÅRS FØDSELSDAG. DET VAR NEMT AT KOORDINERE MED DEM,
+                DRINKSENE VAR LÆKRE OG SERVICEN HELT I TOP! JEG VIL HELT KLART
+                BRUGE DEM IGEN NÆSTE GANG, JEG SKAL HOLDE EN FEST 🥳” <br /> -
+                SASCHA HASSELBALCH / DATO: 05.10.2024
+              </p>
+            </div>
+            <div class="flex-none w-full md:w-1/2 p-4 px-12" id="slide4">
+              <div class="relative h-88">
+                <Image
+                  src={foto3}
+                  alt=""
+                  class="w-full h-[500px] object-cover rounded-lg shadow-md"
+                />
+              </div>
+              <p class="text-center mt-4 text-[#E52622]">
+                “JEG KAN VARMT ANBEFALE TENDER! JEG BOOKEDE LUKAS OG LINUS TIL
+                EN POLTERABEND I PRIVAT REGI. DET VAR TOP PROFESSIONELT HELE
+                VEJEN IGENNEM, GOD ENERGI OG GODE DRINKS” <br /> - THOMAS /
+                DATO: 04.05.2024
+              </p>
+            </div>
+            <div class="flex-none w-full md:w-1/2 p-4 px-12" id="slide4">
+              <div class="relative h-88">
+                <Image
+                  src={foto6}
+                  alt=""
+                  class="w-full h-[500px] object-cover rounded-lg shadow-md"
+                />
+              </div>
+              <p class="text-center mt-4 text-[#E52622]">
+                “VI HAVDE TENDER UDE TIL VORES 30 ÅRS BRYLLUPSFEST. DET VAR EN
+                FORNØJELSE, VI VAR SUPER TILFREDSE MED DERES SERVICE FRA START
+                TIL SLUT. GODE DRINKS OG VIRKELIG GOD SERVICE. DE ER MEGET
+                OPMÆRKSOMME OG PÅLIDELIGE. KOMMER TIL AFTALT TID OG OVERHOLDER
+                HVAD DE LOVER. JEG KAN VARMT ANBEFALE TENDER, HVIS I ØNSKER GODE
+                DRINKS OG GOD SERVICE.” <br /> - JANNI SERVAIS / DATO:
+                12.10.2024
+              </p>
+            </div>
+          </div>
+
+          <!-- Navigationsknapper placeret ved siderne af karussellen -->
+          <button
+            id="prev"
+            class="absolute left-4 text-2xl open-sans top-1/2 transform -translate-y-1/2 text-[#E52622] p-2"
+          >
+            ❮
+          </button>
+          <button
+            id="next"
+            class="absolute right-4 text-2xl open-sans top-1/2 transform -translate-y-1/2 text-[#E52622] p-2"
+          >
+            ❯
+          </button>
         </div>
       </div>
-
-      <!-- Billederne i 2/3 af grid -->
-      <div
-        class="col-span-1 md:col-span-2 order-2 md:order-2 relative mt-12 md:mt-0"
-      >
-        <ul id="stagger" class="relative list-none staggeranimation">
-          <!-- Første billede -->
-          <li
-            class="relative md:absolute top-0 md:top-[-40px] left-0 md:left-20 w-full md:w-[40%] mb-8 md:mb-0 opacity-0"
-          >
-            <Image src={foto1} alt="Billede 1" class="w-full" />
-          </li>
-
-          <!-- Tredje billede -->
-          <li
-            class="relative md:absolute top-0 md:top-[300px] left-0 md:left-[100px] w-full md:w-[40%] mb-8 md:mb-0 opacity-0"
-          >
-            <Image src={foto3} alt="Billede 3" class="w-full" />
-          </li>
-
-          <!-- Andet billede -->
-          <li
-            class="relative md:absolute top-0 md:top-[50px] left-0 md:left-[600px] transform md:-translate-x-1/2 w-full md:w-[40%] opacity-0"
-          >
-            <Image src={foto2} alt="Billede 2" class="w-full" />
-          </li>
-        </ul>
-      </div>
     </section>
+
+    <style>
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .animate-spin-slow {
+        animation: spin 10s linear infinite; /* 10s er varigheden af en fuld rotation */
+      }
+    </style>
+
+    <script>
+      import { inView } from "motion";
+      import { animate } from "motion";
+      import { stagger } from "motion";
+
+      // <-- Stagger på bokse  er -->
+      inView("#stagger", () => {
+        animate(
+          ".staggeranimation li",
+          { opacity: [0, 1] },
+          {
+            delay: stagger(1, { start: 1 }),
+          }
+        );
+      });
+    </script>
+
+    <script>
+      const slideContainer = document.getElementById("carousel-slide");
+      const slides = document.querySelectorAll("#carousel-slide > div");
+      const prevButton = document.getElementById("prev");
+      const nextButton = document.getElementById("next");
+      let currentSlide = 0;
+
+      function showSlide() {
+        const slideWidth = slides[0].clientWidth;
+        slideContainer.style.transform = `translateX(-${
+          currentSlide * slideWidth
+        }px)`;
+      }
+
+      nextButton.addEventListener("click", () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide();
+      });
+
+      prevButton.addEventListener("click", () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide();
+      });
+
+      window.addEventListener("resize", showSlide);
+    </script>
   </article>
 </MainLayout>
-
-<style>
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .animate-spin-slow {
-    animation: spin 10s linear infinite; /* 10s er varigheden af en fuld rotation */
-  }
-</style>
-
-<script>
-  import { inView } from "motion";
-  import { animate } from "motion";
-  import { stagger } from "motion";
-
-  // <-- Stagger på bokse  er -->
-  inView("#stagger", () => {
-    animate(
-      ".staggeranimation li",
-      { opacity: [0, 1] },
-      {
-        delay: stagger(1, { start: 1 }),
-      }
-    );
-  });
-</script>

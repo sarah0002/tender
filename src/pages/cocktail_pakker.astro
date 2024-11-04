@@ -1,0 +1,375 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import "../styles/tobii.min.css";
+import "motion";
+---
+
+<MainLayout>
+  <section class="text-[#E52622]">
+    <h1 class="text-[#E52622] text-[100px] text-center open-sans-800">
+      DRINKSPAKKER
+    </h1>
+    <h2 class="text-[#E52622] text-[40px] text-center open-sans">
+      VÆLG 1 AF VORES 3 DRINKSPAKKER
+    </h2>
+    <div id="pakker" class="flex flex-rows justify-center gap-20 py-12">
+      <div class="text-center grid grid-rows justify-items-center">
+        <div class="text-center">
+          <div
+            class="grid grid-rows justify-items-center border-2 border-[#E52622] rounded-tl-lg rounded-br-lg p-4"
+          >
+            <h2 class="text-[#E52622] text-[40px] open-sans-800">FEJRINGEN</h2>
+            <p class="">
+              DEN ESSENTIELLE PAKKE, DER SÆTTER GANG I FESTEN. <br />VÆLG TRE
+              DRINKS AF KATEGORIERNE NEDENFOR:
+            </p>
+            <div class="p-4">
+              <p class="text-[30px] open-sans-800">PRIS PER GÆST: 150.-</p>
+              <p class="text-[14px]">*ALLE PRISER INKL. MOMS*</p>
+            </div>
+            <div
+              class="text-[20px] text-center grid grid-rows-2 gap-10 pb-4 open-sans-800 my-8"
+            >
+              <p
+                class="bg-[#E52622]/25 w-[400px] px-10 py-4 rounded-tl-lg rounded-br-lg"
+              >
+                1x VALGFRI <br /> LONGDRINK
+              </p>
+              <p
+                class="bg-[#E52622]/25 w-[400px] px-10 py-4 rounded-tl-lg rounded-br-lg"
+              >
+                1x VALGFRI <br /> MIXED DRINK
+              </p>
+              <p
+                class="bg-[#E52622]/25 w-[400px] px-10 py-4 rounded-tl-lg rounded-br-lg"
+              >
+                1x VALGFRI <br /> COCKTAIL
+              </p>
+            </div>
+
+            <button
+              id="pakke2"
+              class="border-[#E52622] border-2 bg-[#E52622]/25 w-[400px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
+              >VÆLG</button
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <div
+          class="grid grid-rows justify-items-center border-2 border-[#E52622] rounded-tl-lg rounded-br-lg p-4"
+        >
+          <h2 class="text-[#E52622] text-[40px] open-sans-800">FESTEN</h2>
+          <p class="">
+            PAKKEN HVOR DER ER ET BREDT UDVALG TIL ENHVER SMAG <br /> VÆLG FIRE
+            DRINKS AF KATEGORIERNE NEDENFOR:
+          </p>
+          <div class="p-4">
+            <p class="text-[30px] open-sans-800">PRIS PER GÆST: 200.-</p>
+            <p class="text-[14px]">*ALLE PRISER INKL. MOMS*</p>
+          </div>
+          <div
+            class="text-[20px] text-center grid grid-rows-2 gap-10 pb-4 open-sans-800 my-8"
+          >
+            <p
+              class="bg-[#E52622]/25 w-[400px] px-10 py-4 rounded-tl-lg rounded-br-lg"
+            >
+              1x VALGFRI <br /> LONGDRINK
+            </p>
+            <p
+              class="bg-[#E52622]/25 w-[400px] px-10 py-4 rounded-tl-lg rounded-br-lg"
+            >
+              2x VALGFRI <br /> MIXED DRINK
+            </p>
+            <p
+              class="bg-[#E52622]/25 w-[400px] px-10 py-4 rounded-tl-lg rounded-br-lg"
+            >
+              1x VALGFRI <br /> COCKTAIL
+            </p>
+          </div>
+
+          <button
+            id="pakke2"
+            class="border-[#E52622] border-2 bg-[#E52622]/25 w-[400px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
+            >VÆLG</button
+          >
+        </div>
+      </div>
+
+      <div class="text-center">
+        <div
+          class="grid grid-rows justify-items-center border-2 border-[#E52622] rounded-tl-lg rounded-br-lg p-4"
+        >
+          <h2 class="text-[#E52622] text-[40px] open-sans-800">ALL-IN!</h2>
+          <p class="">
+            NÅR FESTEN ABSOLUTE IKKE SKAL MANGLE NOGET <br />VÆLG FEM DRINKS AF
+            KATEGORIERNE NEDENFOR:
+          </p>
+          <div class="p-4">
+            <p class="text-[30px] open-sans-800">PRIS PER GÆST: 250.-</p>
+            <p class="text-[14px]">*ALLE PRISER INKL. MOMS*</p>
+          </div>
+          <div
+            class="text-[20px] text-center grid grid-rows-2 gap-10 pb-4 open-sans-800 my-8"
+          >
+            <p
+              class="bg-[#E52622]/25 w-[400px] px-10 py-4 rounded-tl-lg rounded-br-lg"
+            >
+              1x VALGFRI <br /> LONGDRINK
+            </p>
+            <p
+              class="bg-[#E52622]/25 w-[400px] px-10 py-4 rounded-tl-lg rounded-br-lg"
+            >
+              2x VALGFRI <br /> MIXED DRINK
+            </p>
+            <p
+              class="bg-[#E52622]/25 w-[400px] px-10 py-4 rounded-tl-lg rounded-br-lg"
+            >
+              2x VALGFRI <br /> COCKTAIL
+            </p>
+          </div>
+
+          <button
+            id="pakke3"
+            class="border-[#E52622] border-2 bg-[#E52622]/25 w-[400px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
+            >VÆLG</button
+          >
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="p-6">
+        <h1 class="text-3xl font-bold mb-6">Vælg din Drinkspakke</h1>
+
+        <div id="pakker" class="mb-6 space-x-4">
+          <button
+            id="pakke1"
+            class="text-[#E52622] py-2 px-4 rounded hover:text-white hover:bg-[#E52622]"
+            >Pakke 1</button
+          >
+          <button
+            id="pakke2"
+            class="text-[#E52622] py-2 px-4 rounded hover:text-white hover:bg-[#E52622]"
+            >Pakke 2</button
+          >
+          <button
+            id="pakke3"
+            class="text-[#E52622] py-2 px-4 rounded hover:text-white hover:bg-[#E52622]"
+            >Pakke 3</button
+          >
+        </div>
+
+        <div id="drinks">
+          <div
+            id="kategori1"
+            class="kategori mb-4 p-4 border rounded bg-white shadow"
+          >
+            <h2 class="text-xl font-semibold mb-2">Kategori 1</h2>
+            <label class="block"
+              ><input
+                type="checkbox"
+                class="drink-checkbox"
+                data-category="kategori1"
+              /> Drink A</label
+            >
+            <label class="block"
+              ><input
+                type="checkbox"
+                class="drink-checkbox"
+                data-category="kategori1"
+              /> Drink B</label
+            >
+            <label class="block"
+              ><input
+                type="checkbox"
+                class="drink-checkbox"
+                data-category="kategori1"
+              /> Drink C</label
+            >
+          </div>
+
+          <div
+            id="kategori2"
+            class="kategori mb-4 p-4 border rounded bg-white shadow"
+          >
+            <h2 class="text-xl font-semibold mb-2">Kategori 2</h2>
+            <label class="block"
+              ><input
+                type="checkbox"
+                class="drink-checkbox"
+                data-category="kategori2"
+              /> Drink D</label
+            >
+            <label class="block"
+              ><input
+                type="checkbox"
+                class="drink-checkbox"
+                data-category="kategori2"
+              /> Drink E</label
+            >
+            <label class="block"
+              ><input
+                type="checkbox"
+                class="drink-checkbox"
+                data-category="kategori2"
+              /> Drink F</label
+            >
+          </div>
+
+          <div
+            id="kategori3"
+            class="kategori mb-4 p-4 border rounded bg-white shadow"
+          >
+            <h2 class="text-xl font-semibold mb-2">Kategori 3</h2>
+            <label class="block"
+              ><input
+                type="checkbox"
+                class="drink-checkbox"
+                data-category="kategori3"
+              /> Drink G</label
+            >
+            <label class="block"
+              ><input
+                type="checkbox"
+                class="drink-checkbox"
+                data-category="kategori3"
+              /> Drink H</label
+            >
+            <label class="block"
+              ><input
+                type="checkbox"
+                class="drink-checkbox"
+                data-category="kategori3"
+              /> Drink I</label
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document
+        .getElementById("pakke1")
+        .addEventListener("click", () => selectPackage(1));
+      document
+        .getElementById("pakke2")
+        .addEventListener("click", () => selectPackage(2));
+      document
+        .getElementById("pakke3")
+        .addEventListener("click", () => selectPackage(3));
+
+      const drinkCheckboxes = document.querySelectorAll(".drink-checkbox");
+      drinkCheckboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+          selectDrink(this.dataset.category, this);
+        });
+      });
+    });
+
+    let selectedPackage = null;
+
+    function selectPackage(packageNumber) {
+      selectedPackage = packageNumber;
+
+      // Reset selections
+      const categories = document.querySelectorAll(".kategori");
+      categories.forEach((category) => {
+        const checkboxes = category.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+          checkbox.checked = false; // Clear all selections
+          checkbox.parentElement.style.display = ""; // Show all drinks
+        });
+      });
+    }
+
+    function selectDrink(category, checkbox) {
+      const checkboxes = document.querySelectorAll(
+        `#${category} input[type="checkbox"]`
+      );
+      const selectedCount = Array.from(checkboxes).filter(
+        (chk) => chk.checked
+      ).length;
+
+      // Validate selection and hide unselected options if maximum is reached
+      validateSelection(selectedCount, category);
+      toggleCheckboxVisibility(category, selectedCount);
+    }
+
+    function validateSelection(selectedCount, category) {
+      if (selectedPackage === 1) {
+        if (selectedCount > 1) {
+          alert("Du kan kun vælge én drink fra hver kategori.");
+          uncheckLast(category);
+        }
+      } else if (selectedPackage === 2) {
+        if (category === "kategori1" && selectedCount > 1) {
+          alert("Du kan kun vælge én drink fra kategori 1.");
+          uncheckLast(category);
+        } else if (category === "kategori2" && selectedCount > 2) {
+          alert("Du kan kun vælge op til to drinks fra kategori 2.");
+          uncheckLast(category);
+        } else if (category === "kategori3" && selectedCount > 1) {
+          alert("Du kan kun vælge én drink fra kategori 3.");
+          uncheckLast(category);
+        }
+      } else if (selectedPackage === 3) {
+        if (category === "kategori1" && selectedCount > 1) {
+          alert("Du kan kun vælge én drink fra kategori 1.");
+          uncheckLast(category);
+        } else if (category === "kategori2" && selectedCount > 2) {
+          alert("Du kan kun vælge op til to drinks fra kategori 2.");
+          uncheckLast(category);
+        } else if (category === "kategori3" && selectedCount > 2) {
+          alert("Du kan kun vælge op til to drinks fra kategori 3.");
+          uncheckLast(category);
+        }
+      }
+    }
+
+    function uncheckLast(category) {
+      const checkboxes = document.querySelectorAll(
+        `#${category} input[type="checkbox"]`
+      );
+      const checkedCheckboxes = Array.from(checkboxes).filter(
+        (chk) => chk.checked
+      );
+      if (checkedCheckboxes.length > 0) {
+        checkedCheckboxes[checkedCheckboxes.length - 1].checked = false;
+      }
+    }
+
+    function toggleCheckboxVisibility(category, selectedCount) {
+      let maxSelections = 1;
+
+      if (selectedPackage === 2 && category === "kategori2") {
+        maxSelections = 2;
+      } else if (
+        selectedPackage === 3 &&
+        (category === "kategori2" || category === "kategori3")
+      ) {
+        maxSelections = 2;
+      }
+
+      const checkboxes = document.querySelectorAll(
+        `#${category} input[type="checkbox"]`
+      );
+
+      if (selectedCount >= maxSelections) {
+        checkboxes.forEach((chk) => {
+          if (!chk.checked) {
+            chk.parentElement.style.display = "none"; // Hide unselected drinks
+          }
+        });
+      } else {
+        checkboxes.forEach((chk) => {
+          chk.parentElement.style.display = ""; // Show all drinks again
+        });
+      }
+    }
+  </script>
+</MainLayout>
