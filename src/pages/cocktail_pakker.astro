@@ -3,6 +3,29 @@ import MainLayout from "../layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import "../styles/tobii.min.css";
 import "motion";
+
+import cuba from "../assets/images/cubalibre.webp";
+import ginhass from "../assets/images/ginhass.webp";
+import moscow from "../assets/images/moscowmule.webp";
+import GT from "../assets/images/gintonic.webp";
+import mojito from "../assets/images/mojito.webp";
+
+import dark from "../assets/images/darknstormy.webp";
+import paloma from "../assets/images/paloma.webp";
+import marg from "../assets/images/margarita.webp";
+import pina from "../assets/images/pinacolada.webp";
+import eastside from "../assets/images/eastside.webp";
+import cosmo from "../assets/images/cosmopolitan.webp";
+import pornstar from "../assets/images/pornstarmartini.webp";
+import passion from "../assets/images/passionsour.webp";
+
+import negroni from "../assets/images/negroni.webp";
+import espre from "../assets/images/espressomartini.webp";
+import jalis from "../assets/images/jaliscomartini.webp";
+import whiskey from "../assets/images/whiskeysour.webp";
+import limon from "../assets/images/limoncellosour.webp";
+import tanger from "../assets/images/tangerinesour.webp";
+import hugo from "../assets/images/hugospritz.webp";
 ---
 
 <MainLayout>
@@ -142,89 +165,295 @@ import "motion";
   </section>
 
   <section>
-    <div id="drinks">
-      <div
-        id="kategori1"
-        class="kategori mb-4 p-4 border rounded bg-white shadow"
-      >
-        <h2 class="text-xl font-semibold mb-2">Kategori 1</h2>
-        <label class="block"
-          ><input
-            type="checkbox"
-            class="drink-checkbox"
-            data-category="kategori1"
-          /> Drink A</label
+    <div id="drinks" class="text-[#E52622]">
+      <div id="kategori1" class="kategori mb-4 p-4">
+        <h2
+          class="border-[#E52622] border-2 bg-[#E52622]/25 w-fit px-16 py-2 rounded-tl-lg rounded-br-lg open-sans-800 mb-4"
         >
-        <label class="block"
-          ><input
-            type="checkbox"
-            class="drink-checkbox"
-            data-category="kategori1"
-          /> Drink B</label
-        >
-        <label class="block"
-          ><input
-            type="checkbox"
-            class="drink-checkbox"
-            data-category="kategori1"
-          /> Drink C</label
-        >
+          LONGDRINKS
+        </h2>
+        <div class="flex gap-12">
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori1"
+            />
+            <Image
+              src={cuba}
+              alt="Billede af drinken Cuba Libre"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>CUBA LIBRE</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori1"
+            />
+            <Image
+              src={ginhass}
+              alt="Billede af drinken Gin Hass"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>GIN HASS</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori1"
+            />
+            <Image
+              src={moscow}
+              alt="Billede af drinken Moscow Mule"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>MOSCOW MULE</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori1"
+            />
+            <Image
+              src={GT}
+              alt="Billede af drinken Gin Tonic"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>GIN TONIC</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori1"
+            />
+            <Image
+              src={mojito}
+              alt="Billede af drinken Mojito"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>MOJITO</h3>
+          </label>
+        </div>
       </div>
 
-      <div
-        id="kategori2"
-        class="kategori mb-4 p-4 border rounded bg-white shadow"
-      >
-        <h2 class="text-xl font-semibold mb-2">Kategori 2</h2>
-        <label class="block"
-          ><input
-            type="checkbox"
-            class="drink-checkbox"
-            data-category="kategori2"
-          /> Drink D</label
+      <div id="kategori2" class="kategori mb-4 p-4">
+        <h2
+          class="border-[#E52622] border-2 bg-[#E52622]/25 w-fit px-16 py-2 rounded-tl-lg rounded-br-lg open-sans-800 mb-4"
         >
-        <label class="block"
-          ><input
-            type="checkbox"
-            class="drink-checkbox"
-            data-category="kategori2"
-          /> Drink E</label
-        >
-        <label class="block"
-          ><input
-            type="checkbox"
-            class="drink-checkbox"
-            data-category="kategori2"
-          /> Drink F</label
-        >
+          MIXED DRINKS
+        </h2>
+        <div class="flex flex-wrap gap-12">
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori2"
+            />
+            <Image
+              src={dark}
+              alt="Billede af drinken DarknStormy"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>DARK N' STORMY</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori2"
+            />
+            <Image
+              src={paloma}
+              alt="Billede af drinken Paloma"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>PALOMA</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori2"
+            />
+            <Image
+              src={cosmo}
+              alt="Billede af drinken Cosmopolitan"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>COSMOPOLITAN</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori2"
+            />
+            <Image
+              src={marg}
+              alt="Billede af drinken Margarita"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>MARGARITA</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori2"
+            />
+            <Image
+              src={pina}
+              alt="Billede af drinken Pina Colada"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>PINA COLADA</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori2"
+            />
+            <Image
+              src={pornstar}
+              alt="Billede af drinken Pornstar Martint"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>PORNSTAR MARTINI</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori2"
+            />
+            <Image
+              src={passion}
+              alt="Billede af drinken Passion Sour"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>PASSION SOUR</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori2"
+            />
+            <Image
+              src={eastside}
+              alt="Billede af drinken Eastside"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>EASTSIDE</h3>
+          </label>
+        </div>
       </div>
 
-      <div
-        id="kategori3"
-        class="kategori mb-4 p-4 border rounded bg-white shadow"
-      >
-        <h2 class="text-xl font-semibold mb-2">Kategori 3</h2>
-        <label class="block"
-          ><input
-            type="checkbox"
-            class="drink-checkbox"
-            data-category="kategori3"
-          /> Drink G</label
+      <div id="kategori3" class="kategori mb-4 p-4">
+        <h2
+          class="border-[#E52622] border-2 bg-[#E52622]/25 w-fit px-16 py-2 rounded-tl-lg rounded-br-lg open-sans-800 mb-4"
         >
-        <label class="block"
-          ><input
-            type="checkbox"
-            class="drink-checkbox"
-            data-category="kategori3"
-          /> Drink H</label
-        >
-        <label class="block"
-          ><input
-            type="checkbox"
-            class="drink-checkbox"
-            data-category="kategori3"
-          /> Drink I</label
-        >
+          COCKTAILS
+        </h2>
+        <div class="flex gap-12">
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori3"
+            />
+            <Image
+              src={negroni}
+              alt="Billede af drinken Negroni"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>NEGRONI</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori3"
+            />
+            <Image
+              src={espre}
+              alt="Billede af drinken Espresso martini"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>ESPRESSO MARTINI</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori3"
+            />
+            <Image
+              src={jalis}
+              alt="Billede af drinken Jalisco martini"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>JALISCO MARTINI</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori3"
+            />
+            <Image
+              src={whiskey}
+              alt="Billede af drinken Whiskey Sour"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>WHISKEY SOUR</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori3"
+            />
+            <Image
+              src={limon}
+              alt="Billede af drinken Limoncello Sour"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>LIMONCELLO SOUR</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori3"
+            />
+            <Image
+              src={tanger}
+              alt="Billede af drinken Tangerine Sour"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>TANGERINE SOUR</h3>
+          </label>
+          <label class="block">
+            <input
+              type="checkbox"
+              class="drink-checkbox hidden"
+              data-category="kategori3"
+            />
+            <Image
+              src={hugo}
+              alt="Billede af drinken Hugo Spritz"
+              class="w-56 cursor-pointer drink-image"
+            />
+            <h3>HUGO SPRITZ</h3>
+          </label>
+        </div>
       </div>
     </div>
   </section>
