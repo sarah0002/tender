@@ -4,6 +4,8 @@ import { Image } from "astro:assets";
 import "../styles/tobii.min.css";
 import "motion";
 
+import Button2 from "../components/Button2.astro";
+
 import cuba from "../assets/images/cubalibre.webp";
 import ginhass from "../assets/images/ginhass.webp";
 import moscow from "../assets/images/moscowmule.webp";
@@ -30,57 +32,63 @@ import hugo from "../assets/images/hugospritz.webp";
 
 <MainLayout>
   <section class="text-[#E52622]">
-    <h1 class="text-[#E52622] text-[100px] text-center open-sans-800">
+    <h1
+      class="text-[#E52622] text-[100px] md:text-[60px] sm:text-[40px] text-center open-sans-800"
+    >
       DRINKSPAKKER
     </h1>
-    <h2 class="text-[#E52622] text-[40px] text-center open-sans">
+    <h2
+      class="text-[#E52622] text-[40px] md:text-[30px] sm:text-[20px] text-center open-sans"
+    >
       VÆLG 1 AF VORES 3 DRINKSPAKKER
     </h2>
-    <div id="pakker" class="flex flex-rows justify-center gap-20 py-12">
+    <div
+      id="pakker"
+      class="flex flex-col md:flex-row justify-center gap-10 md:gap-20 py-12 px-4"
+    >
       <!-- Knappanelement 1 -->
       <div class="text-center grid grid-rows justify-items-center">
         <div class="text-center">
           <div
-            class="grid grid-rows justify-items-center border-2 border-[#E52622] w-[400px] rounded-tl-lg rounded-br-lg p-4"
+            class="grid grid-rows justify-items-center border-2 border-[#E52622] w-[300px] md:w-[400px] rounded-tl-lg rounded-br-lg p-4"
           >
-            <h2 class="text-[#E52622] text-[40px] open-sans-800">FEJRINGEN</h2>
-            <p class="text-[13px]">
+            <h2
+              class="text-[#E52622] text-[40px] md:text-[30px] sm:text-[24px] open-sans-800"
+            >
+              FEJRINGEN
+            </h2>
+            <p class="text-[13px] sm:text-[11px]">
               DEN ESSENTIELLE PAKKE, DER SÆTTER GANG I FESTEN. <br />VÆLG TRE
               DRINKS AF KATEGORIERNE NEDENFOR:
             </p>
             <div class="p-4">
-              <p class="text-[30px] open-sans-800">PRIS PER GÆST: 150.-</p>
-              <p class="text-[14px]">*ALLE PRISER INKL. MOMS*</p>
+              <p class="text-[30px] sm:text-[24px] open-sans-800">
+                PRIS PER GÆST: 150.-
+              </p>
+              <p class="text-[14px] sm:text-[12px]">*ALLE PRISER INKL. MOMS*</p>
             </div>
             <div
-              class="text-[20px]
-            text-center
-            grid
-            grid-rows-2
-            gap-2
-            pb-2
-            open-sans-800
-            my-2"
+              class="text-[20px] sm:text-[16px] text-center grid grid-rows-2 gap-2 pb-2 open-sans-800 my-2"
             >
               <p
-                class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
+                class="bg-[#E52622]/25 w-[250px] sm:w-[200px] p-4 rounded-tl-lg rounded-br-lg"
               >
                 1x VALGFRI <br /> LONGDRINK
               </p>
               <p
-                class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
+                class="bg-[#E52622]/25 w-[250px] sm:w-[200px] p-4 rounded-tl-lg rounded-br-lg"
               >
                 1x VALGFRI <br /> MIXED DRINK
               </p>
               <p
-                class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
+                class="bg-[#E52622]/25 w-[250px] sm:w-[200px] p-4 rounded-tl-lg rounded-br-lg"
               >
                 1x VALGFRI <br /> COCKTAIL
               </p>
             </div>
             <button
-              id="pakke1"
-              class="select-btn border-[#E52622] border-2 bg-[#E52622]/25 w-[300px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
+              id="PAKKE1"
+              class="select-btn border-[#E52622] border-2 bg-[#E52622]/25 w-[250px] sm:w-[200px] mt-8 px-8 sm:px-4 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] sm:text-[18px] open-sans-800 hover:bg-[#E52622] hover:text-white"
             >
               VÆLG
             </button>
@@ -91,46 +99,45 @@ import hugo from "../assets/images/hugospritz.webp";
       <!-- Knappanelement 2 -->
       <div class="text-center">
         <div
-          class="grid grid-rows justify-items-center w-[400px] border-2 border-[#E52622] rounded-tl-lg rounded-br-lg p-4"
+          class="grid grid-rows justify-items-center w-[300px] md:w-[400px] border-2 border-[#E52622] rounded-tl-lg rounded-br-lg p-4"
         >
-          <h2 class="text-[#E52622] text-[40px] open-sans-800">FESTEN</h2>
-          <p class="text-[13px]">
+          <h2
+            class="text-[#E52622] text-[40px] md:text-[30px] sm:text-[24px] open-sans-800"
+          >
+            FESTEN
+          </h2>
+          <p class="text-[13px] sm:text-[11px]">
             PAKKEN HVOR DER ER ET UDVALG TIL ENHVER SMAG <br /> VÆLG FIRE DRINKS
             AF KATEGORIERNE NEDENFOR:
           </p>
           <div class="p-4">
-            <p class="text-[30px] open-sans-800">PRIS PER GÆST: 200.-</p>
-            <p class="text-[14px]">*ALLE PRISER INKL. MOMS*</p>
+            <p class="text-[30px] sm:text-[24px] open-sans-800">
+              PRIS PER GÆST: 200.-
+            </p>
+            <p class="text-[14px] sm:text-[12px]">*ALLE PRISER INKL. MOMS*</p>
           </div>
           <div
-            class="text-[20px]
-          text-center
-          grid
-          grid-rows-2
-          gap-2
-          pb-2
-          open-sans-800
-          my-2"
+            class="text-[20px] sm:text-[16px] text-center grid grid-rows-2 gap-2 pb-2 open-sans-800 my-2"
           >
             <p
-              class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
+              class="bg-[#E52622]/25 w-[250px] sm:w-[200px] p-4 rounded-tl-lg rounded-br-lg"
             >
               1x VALGFRI <br /> LONGDRINK
             </p>
             <p
-              class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
+              class="bg-[#E52622]/25 w-[250px] sm:w-[200px] p-4 rounded-tl-lg rounded-br-lg"
             >
               2x VALGFRI <br /> MIXED DRINK
             </p>
             <p
-              class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
+              class="bg-[#E52622]/25 w-[250px] sm:w-[200px] p-4 rounded-tl-lg rounded-br-lg"
             >
               1x VALGFRI <br /> COCKTAIL
             </p>
           </div>
           <button
             id="pakke2"
-            class="select-btn border-[#E52622] border-2 bg-[#E52622]/25 w-[300px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
+            class="select-btn border-[#E52622] border-2 bg-[#E52622]/25 w-[250px] sm:w-[200px] mt-8 px-8 sm:px-4 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] sm:text-[18px] open-sans-800 hover:bg-[#E52622] hover:text-white"
           >
             VÆLG
           </button>
@@ -140,46 +147,45 @@ import hugo from "../assets/images/hugospritz.webp";
       <!-- Knappanelement 3 -->
       <div class="text-center">
         <div
-          class="grid grid-rows justify-items-center w-[400px] border-2 border-[#E52622] rounded-tl-lg rounded-br-lg p-4"
+          class="grid grid-rows justify-items-center w-[300px] md:w-[400px] border-2 border-[#E52622] rounded-tl-lg rounded-br-lg p-4"
         >
-          <h2 class="text-[#E52622] text-[40px] open-sans-800">ALL-IN!</h2>
-          <p class="text-[13px]">
+          <h2
+            class="text-[#E52622] text-[40px] md:text-[30px] sm:text-[24px] open-sans-800"
+          >
+            ALL-IN!
+          </h2>
+          <p class="text-[13px] sm:text-[11px]">
             NÅR FESTEN ABSOLUTE IKKE SKAL MANGLE NOGET <br />VÆLG FEM DRINKS AF
             KATEGORIERNE NEDENFOR:
           </p>
           <div class="p-4">
-            <p class="text-[30px] open-sans-800">PRIS PER GÆST: 250.-</p>
-            <p class="text-[14px]">*ALLE PRISER INKL. MOMS*</p>
+            <p class="text-[30px] sm:text-[24px] open-sans-800">
+              PRIS PER GÆST: 250.-
+            </p>
+            <p class="text-[14px] sm:text-[12px]">*ALLE PRISER INKL. MOMS*</p>
           </div>
           <div
-            class="text-[20px]
-          text-center
-          grid
-          grid-rows-2
-          gap-2
-          pb-2
-          open-sans-800
-          my-2"
+            class="text-[20px] sm:text-[16px] text-center grid grid-rows-2 gap-2 pb-2 open-sans-800 my-2"
           >
             <p
-              class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
+              class="bg-[#E52622]/25 w-[250px] sm:w-[200px] p-4 rounded-tl-lg rounded-br-lg"
             >
               1x VALGFRI <br /> LONGDRINK
             </p>
             <p
-              class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
+              class="bg-[#E52622]/25 w-[250px] sm:w-[200px] p-4 rounded-tl-lg rounded-br-lg"
             >
               2x VALGFRI <br /> MIXED DRINK
             </p>
             <p
-              class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
+              class="bg-[#E52622]/25 w-[250px] sm:w-[200px] p-4 rounded-tl-lg rounded-br-lg"
             >
               2x VALGFRI <br /> COCKTAIL
             </p>
           </div>
           <button
             id="pakke3"
-            class="select-btn border-[#E52622] border-2 bg-[#E52622]/25 w-[300px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
+            class="select-btn border-[#E52622] border-2 bg-[#E52622]/25 w-[250px] sm:w-[200px] mt-8 px-8 sm:px-4 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] sm:text-[18px] open-sans-800 hover:bg-[#E52622] hover:text-white"
           >
             VÆLG
           </button>
@@ -207,7 +213,7 @@ import hugo from "../assets/images/hugospritz.webp";
                 alt="Billede af drinken Cuba Libre"
                 class="w-60 cursor-pointer drink-image"
               />
-              <h3>CUBA LIBRE</h3>
+              <h3 class="">CUBA LIBRE</h3>
             </label>
             <label class="block">
               <input
@@ -480,6 +486,83 @@ import hugo from "../assets/images/hugospritz.webp";
         </div>
       </div>
     </section>
+    <section id="order-summary" class="text-[#E52622] pl-40 py-12 mb-4 p-4">
+      <h2 class="text-[30px] open-sans-800 mb-4">DIN FORSPØRGSEL</h2>
+      <div id="selected-package" class="mb-5">
+        <strong>VALGTE PAKKE:</strong>
+        <div id="package-name">
+          <span>INGEN PAKKE VALGT</span>
+        </div>
+      </div>
+      <div id="selected-drinks" class="mb-5">
+        <strong>VALGTE DRINKS:</strong>
+        <div id="drink-list">
+          <p>INGEN DRINKS VALGT</p>
+        </div>
+      </div>
+      <div class="py-5">
+        <label for="navn" class="block text-[#E52622] open-sans-800"
+          >NAVN *</label
+        >
+        <input
+          type="text"
+          id="navn"
+          name="navn"
+          placeholder=""
+          class="px-1 border-2 border-[#E52622] text-lg rounded-lg w-4/12"
+        />
+      </div>
+      <div class="pb-5">
+        <label for="email" class="block text-[#E52622] open-sans-800"
+          >EMAIL *</label
+        >
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder=""
+          class="px-1 border-2 border-[#E52622] text-lg rounded-lg w-4/12"
+        />
+      </div>
+      <div class="">
+        <div class="mb-4">
+          <label for="event-date" class="block text-[#E52622] open-sans-800"
+            >DATO FOR EVENT:</label
+          >
+          <input
+            type="date"
+            id="event-date"
+            name="event-date"
+            class="border-2 border-[#E52622] rounded-lg p-2 text-[#E52622] w-4/12"
+            required
+          />
+        </div>
+        <div class="col-span-1">
+          <label for="guests" class="block text-[#E52622] open-sans-800"
+            >ANTAL GÆSTER *</label
+          >
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            placeholder=""
+            class="px-1 border-2 border-[#E52622] text-lg rounded-lg w-4/12"
+          />
+        </div>
+        <div class="py-5">
+          <label for="description" class="block text-[#E52622] open-sans-800"
+            >KOMMENTAR</label
+          >
+          <textarea
+            id="description"
+            name="description"
+            placeholder=""
+            class="px-1 border-2 border-[#E52622] text-lg rounded-lg w-4/12 min-h-[50px] resize-none overflow-hidden"
+          ></textarea>
+        </div>
+        <Button2 class="py-5">SEND FORSPØRGSEL</Button2>
+      </div>
+    </section>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
@@ -619,6 +702,83 @@ import hugo from "../assets/images/hugospritz.webp";
             button.classList.add("selected");
           });
         });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let selectedPackage = null;
+        let selectedDrinks = {
+          kategori1: [],
+          kategori2: [],
+          kategori3: [],
+        };
+
+        const packageButtons = document.querySelectorAll(".select-btn");
+        packageButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            selectedPackage = this.id;
+            updateOrderSummary();
+          });
+        });
+
+        const checkboxes = document.querySelectorAll(".drink-checkbox");
+        checkboxes.forEach((checkbox) => {
+          checkbox.addEventListener("change", function () {
+            const category = this.dataset.category;
+            const drinkName = this.parentNode.querySelector("h3").innerText; // Juster til at hente drinknavnet korrekt
+
+            if (this.checked) {
+              selectedDrinks[category].push(drinkName);
+            } else {
+              selectedDrinks[category] = selectedDrinks[category].filter(
+                (drink) => drink !== drinkName
+              );
+            }
+
+            console.log(selectedDrinks); // Log valgte drinks til konsollen for fejlsøgning
+            updateOrderSummary();
+          });
+        });
+
+        function updateOrderSummary() {
+          const packageNameElement = document.getElementById("package-name");
+          packageNameElement.textContent = selectedPackage
+            ? selectedPackage
+            : "Ingen pakke valgt";
+
+          const drinkListElement = document.getElementById("drink-list");
+          drinkListElement.innerHTML = ""; // Ryd tidligere valg
+
+          let hasDrinks = false; // Variabel til at kontrollere, om der er valgte drinks
+
+          for (const [category, drinks] of Object.entries(selectedDrinks)) {
+            if (drinks.length > 0) {
+              hasDrinks = true; // Hvis der er drinks, sæt denne til true
+              drinkListElement.innerHTML += `<strong>${category}:</strong> ${drinks.join(
+                ", "
+              )}<br>`;
+            }
+          }
+
+          if (!hasDrinks) {
+            drinkListElement.innerHTML = "<p>Ingen drinks valgt</p>";
+          }
+        }
+      });
+    </script>
+
+    <script>
+      <script>document.addEventListener("DOMContentLoaded", function () {
+        const textarea = document.getElementById("description");
+
+        textarea.addEventListener("input", function () {
+          this.style.height = "auto"; // Nulstil højden for at beregne den korrekte højde
+          this.style.height = `${this.scrollHeight}px`; // Sæt højden til scrollHeight
+        });
+
+        // Udfør det også en gang ved indlæsning, hvis der allerede er indhold
+        textarea.style.height = `${textarea.scrollHeight}px`;
       });
     </script>
   </section>

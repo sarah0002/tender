@@ -1,9 +1,61 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import "../styles/tobii.min.css";
+import "motion";
+
+import stemning1 from "../assets/images/stemning.png";
+import stemning2 from "../assets/images/stemning2.png";
+import stemning3 from "../assets/images/stemning3.png";
+import stemning4 from "../assets/images/stemning4.png";
 ---
 
 <MainLayout>
   <article class="">
-    <h1 class="font-bold text-5xl text-red-500 text-center">Cocktail Kursus</h1>
+    <h1
+      class="text-[#E52622] text-[100px] md:text-[60px] sm:text-[40px] text-center open-sans-800"
+    >
+      COCKTAILKURSUS
+    </h1>
+    <h2>
+      VIL DU LÆRE AT LAVE COCKTAILS AF HØJ KVALITET TIL DINE GÆSTER? ELLER MÅSKE
+      BARE PRØVE ATVÆRE BARTENDERE FOR EN AFTEN?
+    </h2>
+
+    <div class="flex flex-col items-center justify-center m-0 p-0">
+      <div class="max-w-2xl text-center m-5">
+        <div class="text-2xl text-red-600 mb-2">
+          VI TILBYDER COCKTAILKURSER SOM ER SKRÆDDERSYET PRÆCIS TIL DET I GERNE
+          VIL HAVE KONTAKT OS OG FÅ ET UFORPLIGTENDE TILBUD
+        </div>
+        <button
+          class="bg-red-600 text-white py-2 px-4 rounded text-lg uppercase mb-5 cursor-pointer"
+          >Kontakt Os</button
+        >
+
+        <div class="grid grid-cols-2 gap-2">
+          <Image
+            src={stemning1}
+            alt="Billede af drinken Moscow Mule"
+            class="col-span-2 rounded-lg object-cover"
+          />
+          <Image
+            src={stemning2}
+            alt="Billede af drinken Moscow Mule"
+            class="rounded-lg object-cover"
+          />
+          <Image
+            src={stemning3}
+            alt="Billede af drinken Moscow Mule"
+            class="rounded-lg object-cover"
+          />
+          <Image
+            src={stemning4}
+            alt="Billede af drinken Moscow Mule"
+            class="rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    </div>
   </article>
 </MainLayout>
