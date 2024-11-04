@@ -37,6 +37,7 @@ import hugo from "../assets/images/hugospritz.webp";
       VÆLG 1 AF VORES 3 DRINKSPAKKER
     </h2>
     <div id="pakker" class="flex flex-rows justify-center gap-20 py-12">
+      <!-- Knappanelement 1 -->
       <div class="text-center grid grid-rows justify-items-center">
         <div class="text-center">
           <div
@@ -52,7 +53,14 @@ import hugo from "../assets/images/hugospritz.webp";
               <p class="text-[14px]">*ALLE PRISER INKL. MOMS*</p>
             </div>
             <div
-              class="text-[20px] text-center grid grid-rows-2 gap-2 pb-2 open-sans-800 my-2"
+              class="text-[20px]
+            text-center
+            grid
+            grid-rows-2
+            gap-2
+            pb-2
+            open-sans-800
+            my-2"
             >
               <p
                 class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
@@ -70,16 +78,17 @@ import hugo from "../assets/images/hugospritz.webp";
                 1x VALGFRI <br /> COCKTAIL
               </p>
             </div>
-
             <button
               id="pakke1"
-              class="border-[#E52622] border-2 bg-[#E52622]/25 w-[300px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
-              >VÆLG</button
+              class="select-btn border-[#E52622] border-2 bg-[#E52622]/25 w-[300px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
             >
+              VÆLG
+            </button>
           </div>
         </div>
       </div>
 
+      <!-- Knappanelement 2 -->
       <div class="text-center">
         <div
           class="grid grid-rows justify-items-center w-[400px] border-2 border-[#E52622] rounded-tl-lg rounded-br-lg p-4"
@@ -94,7 +103,14 @@ import hugo from "../assets/images/hugospritz.webp";
             <p class="text-[14px]">*ALLE PRISER INKL. MOMS*</p>
           </div>
           <div
-            class="text-[20px] text-center grid grid-rows-2 gap-2 pb-2 open-sans-800 my-2"
+            class="text-[20px]
+          text-center
+          grid
+          grid-rows-2
+          gap-2
+          pb-2
+          open-sans-800
+          my-2"
           >
             <p
               class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
@@ -112,15 +128,16 @@ import hugo from "../assets/images/hugospritz.webp";
               1x VALGFRI <br /> COCKTAIL
             </p>
           </div>
-
           <button
             id="pakke2"
-            class="border-[#E52622] border-2 bg-[#E52622]/25 w-[300px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
-            >VÆLG</button
+            class="select-btn border-[#E52622] border-2 bg-[#E52622]/25 w-[300px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
           >
+            VÆLG
+          </button>
         </div>
       </div>
 
+      <!-- Knappanelement 3 -->
       <div class="text-center">
         <div
           class="grid grid-rows justify-items-center w-[400px] border-2 border-[#E52622] rounded-tl-lg rounded-br-lg p-4"
@@ -135,7 +152,14 @@ import hugo from "../assets/images/hugospritz.webp";
             <p class="text-[14px]">*ALLE PRISER INKL. MOMS*</p>
           </div>
           <div
-            class="text-[20px] text-center grid grid-rows-2 gap-2 pb-2 open-sans-800 my-2"
+            class="text-[20px]
+          text-center
+          grid
+          grid-rows-2
+          gap-2
+          pb-2
+          open-sans-800
+          my-2"
           >
             <p
               class="bg-[#E52622]/25 w-[300px] p-4 rounded-tl-lg rounded-br-lg"
@@ -153,430 +177,456 @@ import hugo from "../assets/images/hugospritz.webp";
               2x VALGFRI <br /> COCKTAIL
             </p>
           </div>
-
           <button
             id="pakke3"
-            class="border-[#E52622] border-2 bg-[#E52622]/25 w-[300px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
-            >VÆLG</button
+            class="select-btn border-[#E52622] border-2 bg-[#E52622]/25 w-[300px] mt-8 px-16 py-4 rounded-tl-lg rounded-br-lg open-sans text-[25px] open-sans-800 hover:bg-[#E52622] hover:text-white"
           >
+            VÆLG
+          </button>
         </div>
       </div>
     </div>
-  </section>
 
-  <section>
-    <div id="drinks" class="text-[#E52622] pl-36">
-      <div id="kategori1" class="kategori mb-4 p-4">
-        <h2
-          class="border-[#E52622] border-2 bg-[#E52622]/25 w-fit px-16 py-2 rounded-tl-lg rounded-br-lg open-sans-800 mb-4"
-        >
-          LONGDRINKS
-        </h2>
-        <div class="flex gap-12">
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori1"
-            />
-            <Image
-              src={cuba}
-              alt="Billede af drinken Cuba Libre"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>CUBA LIBRE</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori1"
-            />
-            <Image
-              src={ginhass}
-              alt="Billede af drinken Gin Hass"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>GIN HASS</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori1"
-            />
-            <Image
-              src={moscow}
-              alt="Billede af drinken Moscow Mule"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>MOSCOW MULE</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori1"
-            />
-            <Image
-              src={GT}
-              alt="Billede af drinken Gin Tonic"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>GIN TONIC</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori1"
-            />
-            <Image
-              src={mojito}
-              alt="Billede af drinken Mojito"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>MOJITO</h3>
-          </label>
+    <section>
+      <div id="drinks" class="text-[#E52622] pl-36">
+        <div id="kategori1" class="kategori mb-4 p-4">
+          <h2
+            class="border-[#E52622] border-2 bg-[#E52622]/25 w-fit px-16 py-2 rounded-tl-lg rounded-br-lg open-sans-800 mb-4"
+          >
+            LONGDRINKS
+          </h2>
+          <div class="flex gap-12">
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori1"
+              />
+              <Image
+                src={cuba}
+                alt="Billede af drinken Cuba Libre"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>CUBA LIBRE</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori1"
+              />
+              <Image
+                src={ginhass}
+                alt="Billede af drinken Gin Hass"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>GIN HASS</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori1"
+              />
+              <Image
+                src={moscow}
+                alt="Billede af drinken Moscow Mule"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>MOSCOW MULE</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori1"
+              />
+              <Image
+                src={GT}
+                alt="Billede af drinken Gin Tonic"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>GIN TONIC</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori1"
+              />
+              <Image
+                src={mojito}
+                alt="Billede af drinken Mojito"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>MOJITO</h3>
+            </label>
+          </div>
+        </div>
+
+        <div id="kategori2" class="kategori mb-4 p-4">
+          <h2
+            class="border-[#E52622] border-2 bg-[#E52622]/25 w-fit px-16 py-2 rounded-tl-lg rounded-br-lg open-sans-800 mb-4"
+          >
+            MIXED DRINKS
+          </h2>
+          <div class="flex flex-wrap gap-12">
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori2"
+              />
+              <Image
+                src={dark}
+                alt="Billede af drinken DarknStormy"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>DARK N' STORMY</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori2"
+              />
+              <Image
+                src={paloma}
+                alt="Billede af drinken Paloma"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>PALOMA</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori2"
+              />
+              <Image
+                src={cosmo}
+                alt="Billede af drinken Cosmopolitan"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>COSMOPOLITAN</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori2"
+              />
+              <Image
+                src={marg}
+                alt="Billede af drinken Margarita"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>MARGARITA</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori2"
+              />
+              <Image
+                src={pina}
+                alt="Billede af drinken Pina Colada"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>PINA COLADA</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori2"
+              />
+              <Image
+                src={pornstar}
+                alt="Billede af drinken Pornstar Martint"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>PORNSTAR MARTINI</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori2"
+              />
+              <Image
+                src={passion}
+                alt="Billede af drinken Passion Sour"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>PASSION SOUR</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori2"
+              />
+              <Image
+                src={eastside}
+                alt="Billede af drinken Eastside"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>EASTSIDE</h3>
+            </label>
+          </div>
+        </div>
+
+        <div id="kategori3" class="kategori mb-4 p-4">
+          <h2
+            class="border-[#E52622] border-2 bg-[#E52622]/25 w-fit px-16 py-2 rounded-tl-lg rounded-br-lg open-sans-800 mb-4"
+          >
+            COCKTAILS
+          </h2>
+          <div class="flex flex-wrap gap-12">
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori3"
+              />
+              <Image
+                src={negroni}
+                alt="Billede af drinken Negroni"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>NEGRONI</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori3"
+              />
+              <Image
+                src={espre}
+                alt="Billede af drinken Espresso martini"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>ESPRESSO MARTINI</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori3"
+              />
+              <Image
+                src={jalis}
+                alt="Billede af drinken Jalisco martini"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>JALISCO MARTINI</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori3"
+              />
+              <Image
+                src={whiskey}
+                alt="Billede af drinken Whiskey Sour"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>WHISKEY SOUR</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori3"
+              />
+              <Image
+                src={limon}
+                alt="Billede af drinken Limoncello Sour"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>LIMONCELLO SOUR</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori3"
+              />
+              <Image
+                src={tanger}
+                alt="Billede af drinken Tangerine Sour"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>TANGERINE SOUR</h3>
+            </label>
+            <label class="block">
+              <input
+                type="checkbox"
+                class="drink-checkbox hidden"
+                data-category="kategori3"
+              />
+              <Image
+                src={hugo}
+                alt="Billede af drinken Hugo Spritz"
+                class="w-60 cursor-pointer drink-image"
+              />
+              <h3>HUGO SPRITZ</h3>
+            </label>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div id="kategori2" class="kategori mb-4 p-4">
-        <h2
-          class="border-[#E52622] border-2 bg-[#E52622]/25 w-fit px-16 py-2 rounded-tl-lg rounded-br-lg open-sans-800 mb-4"
-        >
-          MIXED DRINKS
-        </h2>
-        <div class="flex flex-wrap gap-12">
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori2"
-            />
-            <Image
-              src={dark}
-              alt="Billede af drinken DarknStormy"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>DARK N' STORMY</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori2"
-            />
-            <Image
-              src={paloma}
-              alt="Billede af drinken Paloma"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>PALOMA</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori2"
-            />
-            <Image
-              src={cosmo}
-              alt="Billede af drinken Cosmopolitan"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>COSMOPOLITAN</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori2"
-            />
-            <Image
-              src={marg}
-              alt="Billede af drinken Margarita"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>MARGARITA</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori2"
-            />
-            <Image
-              src={pina}
-              alt="Billede af drinken Pina Colada"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>PINA COLADA</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori2"
-            />
-            <Image
-              src={pornstar}
-              alt="Billede af drinken Pornstar Martint"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>PORNSTAR MARTINI</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori2"
-            />
-            <Image
-              src={passion}
-              alt="Billede af drinken Passion Sour"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>PASSION SOUR</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori2"
-            />
-            <Image
-              src={eastside}
-              alt="Billede af drinken Eastside"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>EASTSIDE</h3>
-          </label>
-        </div>
-      </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .getElementById("pakke1")
+          .addEventListener("click", () => selectPackage(1));
+        document
+          .getElementById("pakke2")
+          .addEventListener("click", () => selectPackage(2));
+        document
+          .getElementById("pakke3")
+          .addEventListener("click", () => selectPackage(3));
 
-      <div id="kategori3" class="kategori mb-4 p-4">
-        <h2
-          class="border-[#E52622] border-2 bg-[#E52622]/25 w-fit px-16 py-2 rounded-tl-lg rounded-br-lg open-sans-800 mb-4"
-        >
-          COCKTAILS
-        </h2>
-        <div class="flex flex-wrap gap-12">
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori3"
-            />
-            <Image
-              src={negroni}
-              alt="Billede af drinken Negroni"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>NEGRONI</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori3"
-            />
-            <Image
-              src={espre}
-              alt="Billede af drinken Espresso martini"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>ESPRESSO MARTINI</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori3"
-            />
-            <Image
-              src={jalis}
-              alt="Billede af drinken Jalisco martini"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>JALISCO MARTINI</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori3"
-            />
-            <Image
-              src={whiskey}
-              alt="Billede af drinken Whiskey Sour"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>WHISKEY SOUR</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori3"
-            />
-            <Image
-              src={limon}
-              alt="Billede af drinken Limoncello Sour"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>LIMONCELLO SOUR</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori3"
-            />
-            <Image
-              src={tanger}
-              alt="Billede af drinken Tangerine Sour"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>TANGERINE SOUR</h3>
-          </label>
-          <label class="block">
-            <input
-              type="checkbox"
-              class="drink-checkbox hidden"
-              data-category="kategori3"
-            />
-            <Image
-              src={hugo}
-              alt="Billede af drinken Hugo Spritz"
-              class="w-60 cursor-pointer drink-image"
-            />
-            <h3>HUGO SPRITZ</h3>
-          </label>
-        </div>
-      </div>
-    </div>
-  </section>
-</MainLayout>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    document
-      .getElementById("pakke1")
-      .addEventListener("click", () => selectPackage(1));
-    document
-      .getElementById("pakke2")
-      .addEventListener("click", () => selectPackage(2));
-    document
-      .getElementById("pakke3")
-      .addEventListener("click", () => selectPackage(3));
-
-    const drinkCheckboxes = document.querySelectorAll(".drink-checkbox");
-    drinkCheckboxes.forEach((checkbox) => {
-      checkbox.addEventListener("change", function () {
-        selectDrink(this.dataset.category, this);
+        const drinkCheckboxes = document.querySelectorAll(".drink-checkbox");
+        drinkCheckboxes.forEach((checkbox) => {
+          checkbox.addEventListener("change", function () {
+            selectDrink(this.dataset.category, this);
+          });
+        });
       });
-    });
-  });
 
-  let selectedPackage = null;
+      let selectedPackage = null;
 
-  function selectPackage(packageNumber) {
-    selectedPackage = packageNumber;
+      function selectPackage(packageNumber) {
+        selectedPackage = packageNumber;
 
-    // Reset selections
-    const categories = document.querySelectorAll(".kategori");
-    categories.forEach((category) => {
-      const checkboxes = category.querySelectorAll('input[type="checkbox"]');
-      checkboxes.forEach((checkbox) => {
-        checkbox.checked = false; // Clear all selections
-        checkbox.parentElement.style.display = ""; // Show all drinks
-      });
-    });
-  }
-
-  function selectDrink(category, checkbox) {
-    const checkboxes = document.querySelectorAll(
-      `#${category} input[type="checkbox"]`
-    );
-    const selectedCount = Array.from(checkboxes).filter(
-      (chk) => chk.checked
-    ).length;
-
-    // Validate selection and hide unselected options if maximum is reached
-    validateSelection(selectedCount, category);
-    toggleCheckboxVisibility(category, selectedCount);
-  }
-
-  function validateSelection(selectedCount, category) {
-    if (selectedPackage === 1) {
-      if (selectedCount > 1) {
-        alert("Du kan kun vælge én drink fra hver kategori.");
-        uncheckLast(category);
+        // Reset selections
+        const categories = document.querySelectorAll(".kategori");
+        categories.forEach((category) => {
+          const checkboxes = category.querySelectorAll(
+            'input[type="checkbox"]'
+          );
+          checkboxes.forEach((checkbox) => {
+            checkbox.checked = false; // Clear all selections
+            checkbox.parentElement.style.display = ""; // Show all drinks
+          });
+        });
       }
-    } else if (selectedPackage === 2) {
-      if (category === "kategori1" && selectedCount > 1) {
-        alert("Du kan kun vælge én drink fra kategori 1.");
-        uncheckLast(category);
-      } else if (category === "kategori2" && selectedCount > 2) {
-        alert("Du kan kun vælge op til to drinks fra kategori 2.");
-        uncheckLast(category);
-      } else if (category === "kategori3" && selectedCount > 1) {
-        alert("Du kan kun vælge én drink fra kategori 3.");
-        uncheckLast(category);
+
+      function selectDrink(category, checkbox) {
+        const checkboxes = document.querySelectorAll(
+          `#${category} input[type="checkbox"]`
+        );
+        const selectedCount = Array.from(checkboxes).filter(
+          (chk) => chk.checked
+        ).length;
+
+        // Validate selection and hide unselected options if maximum is reached
+        validateSelection(selectedCount, category);
+        toggleCheckboxVisibility(category, selectedCount);
       }
-    } else if (selectedPackage === 3) {
-      if (category === "kategori1" && selectedCount > 1) {
-        alert("Du kan kun vælge én drink fra kategori 1.");
-        uncheckLast(category);
-      } else if (category === "kategori2" && selectedCount > 2) {
-        alert("Du kan kun vælge op til to drinks fra kategori 2.");
-        uncheckLast(category);
-      } else if (category === "kategori3" && selectedCount > 2) {
-        alert("Du kan kun vælge op til to drinks fra kategori 3.");
-        uncheckLast(category);
-      }
-    }
-  }
 
-  function uncheckLast(category) {
-    const checkboxes = document.querySelectorAll(
-      `#${category} input[type="checkbox"]`
-    );
-    const checkedCheckboxes = Array.from(checkboxes).filter(
-      (chk) => chk.checked
-    );
-    if (checkedCheckboxes.length > 0) {
-      checkedCheckboxes[checkedCheckboxes.length - 1].checked = false;
-    }
-  }
-
-  function toggleCheckboxVisibility(category, selectedCount) {
-    let maxSelections = 1;
-
-    if (selectedPackage === 2 && category === "kategori2") {
-      maxSelections = 2;
-    } else if (
-      selectedPackage === 3 &&
-      (category === "kategori2" || category === "kategori3")
-    ) {
-      maxSelections = 2;
-    }
-
-    const checkboxes = document.querySelectorAll(
-      `#${category} input[type="checkbox"]`
-    );
-
-    if (selectedCount >= maxSelections) {
-      checkboxes.forEach((chk) => {
-        if (!chk.checked) {
-          chk.parentElement.style.display = "none"; // Hide unselected drinks
+      function validateSelection(selectedCount, category) {
+        if (selectedPackage === 1) {
+          if (selectedCount > 1) {
+            alert("Du kan kun vælge én drink fra hver kategori.");
+            uncheckLast(category);
+          }
+        } else if (selectedPackage === 2) {
+          if (category === "kategori1" && selectedCount > 1) {
+            alert("Du kan kun vælge én drink fra kategori 1.");
+            uncheckLast(category);
+          } else if (category === "kategori2" && selectedCount > 2) {
+            alert("Du kan kun vælge op til to drinks fra kategori 2.");
+            uncheckLast(category);
+          } else if (category === "kategori3" && selectedCount > 1) {
+            alert("Du kan kun vælge én drink fra kategori 3.");
+            uncheckLast(category);
+          }
+        } else if (selectedPackage === 3) {
+          if (category === "kategori1" && selectedCount > 1) {
+            alert("Du kan kun vælge én drink fra kategori 1.");
+            uncheckLast(category);
+          } else if (category === "kategori2" && selectedCount > 2) {
+            alert("Du kan kun vælge op til to drinks fra kategori 2.");
+            uncheckLast(category);
+          } else if (category === "kategori3" && selectedCount > 2) {
+            alert("Du kan kun vælge op til to drinks fra kategori 3.");
+            uncheckLast(category);
+          }
         }
+      }
+
+      function uncheckLast(category) {
+        const checkboxes = document.querySelectorAll(
+          `#${category} input[type="checkbox"]`
+        );
+        const checkedCheckboxes = Array.from(checkboxes).filter(
+          (chk) => chk.checked
+        );
+        if (checkedCheckboxes.length > 0) {
+          checkedCheckboxes[checkedCheckboxes.length - 1].checked = false;
+        }
+      }
+
+      function toggleCheckboxVisibility(category, selectedCount) {
+        let maxSelections = 1;
+
+        if (selectedPackage === 2 && category === "kategori2") {
+          maxSelections = 2;
+        } else if (
+          selectedPackage === 3 &&
+          (category === "kategori2" || category === "kategori3")
+        ) {
+          maxSelections = 2;
+        }
+
+        const checkboxes = document.querySelectorAll(
+          `#${category} input[type="checkbox"]`
+        );
+
+        if (selectedCount >= maxSelections) {
+          checkboxes.forEach((chk) => {
+            if (!chk.checked) {
+              chk.parentElement.style.display = "none"; // Hide unselected drinks
+            }
+          });
+        } else {
+          checkboxes.forEach((chk) => {
+            chk.parentElement.style.display = ""; // Show all drinks again
+          });
+        }
+      }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Hent alle knapperne
+        const buttons = document.querySelectorAll(".select-btn");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            // Fjern "selected" klassen fra alle knapper
+            buttons.forEach((btn) => btn.classList.remove("selected"));
+
+            // Tilføj "selected" klassen til den klikkede knap
+            button.classList.add("selected");
+          });
+        });
       });
-    } else {
-      checkboxes.forEach((chk) => {
-        chk.parentElement.style.display = ""; // Show all drinks again
-      });
+    </script>
+  </section>
+
+  <style>
+    /* Tilføj dette til din Tailwind CSS eller custom CSS */
+    .selected {
+      @apply bg-[#E52622] text-white;
     }
-  }
-</script>
+  </style>
+</MainLayout>
